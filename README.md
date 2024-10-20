@@ -4,7 +4,7 @@ Imagine being able to connect to any SCCM-managed system using a VNC-like connec
 ## Details
 https://www.netero1010-securitylab.com/red-team/abuse-sccm-remote-control-as-native-vnc
 
-# Compile
+## Compile
 ```
 c:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe SCCMVNC.cs
 ```
@@ -19,7 +19,7 @@ SCCMVNC.exe reconfig [/target:CLIENT01] [/viewonly] [viewer:user01,user02]
 ```
 
 ## Connect to the host via native SCCM Remote Control tool
-I have attached a copy of the files required to use the native SCCM Remote Control tool. However, it is recommended to copy from your SCCM server.
+I have attached a copy of the files required to use the native SCCM Remote Control tool. However, it is highly recommended to copy from your SCCM server under the `C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\i386\`.
 ```
 CmRcViewer.exe <target hostname/IP>
 ```
